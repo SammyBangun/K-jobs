@@ -9,6 +9,10 @@ defineProps({
     subtitle: {
         type: String,
         required: true
+    },
+    desc: {
+        type: String,
+        required: true
     }
 })
 </script>
@@ -22,6 +26,9 @@ defineProps({
                 </h1>
                 <p class="my-4 text-xl text-white">
                     {{ subtitle }}
+                </p>
+                <p class="my-4 text-xl text-red-800">
+                    {{ desc }}
                 </p>
             </div>
         </div>
